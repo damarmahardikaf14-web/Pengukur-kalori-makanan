@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ubah agar lebih baik di laptop */
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Responsif: Lebar 90% */
+    max-width: 500px; /* Batas lebar di layar besar */
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section label, .input-section input, .input-section select, .input-section button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input-section button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 4px;
+}
+
+.input-section button:hover {
+    background-color: #218838;
+}
+
+.result-section, .nutrition-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.result-section {
+    background-color: #e2f0fb;
+}
+
+#total-calories {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Responsivitas dasar (CSS ini sudah cukup responsif) */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 95%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+}
