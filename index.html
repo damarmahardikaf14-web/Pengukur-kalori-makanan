@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kalori & Nutrisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Kalori Makanan</h1>
+        <div class="input-section">
+            <label for="food-select">Pilih Makanan:</label>
+            <select id="food-select">
+                </select>
+            <label for="quantity">Jumlah Porsi (contoh: 1):</label>
+            <input type="number" id="quantity" value="1" min="0.1" step="0.1">
+            <button onclick="calculate()">Hitung</button>
+        </div>
+
+        <div id="result-section" class="result-section">
+            <h2>Hasil Perhitungan</h2>
+            <p>Total Kalori: <span id="total-calories">0</span> kkal</p>
+        </div>
+
+        <div id="nutrition-details" class="nutrition-details">
+            <h2>Kandungan Nutrisi (per 1 porsi standar)</h2>
+            <p>Protein: <span id="protein-val">-</span> gram</p>
+            <p>Lemak: <span id="fat-val">-</span> gram</p>
+            <p>Karbohidrat: <span id="carbs-val">-</span> gram</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
